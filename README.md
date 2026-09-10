@@ -198,8 +198,8 @@ These values correspond to **stable informational states**.
 ```
 ## Connection to Observations
 
-Interference grids visible in astronomical images (e.g., GALEX, HST) match the double Möbius (M²) structure predicted by TIMDR.  
-The central field point, quadrant-like regions, and stable relational nodes correspond to twist–relation interactions encoded in the model.
+Interference grids visible in astronomical images (e.g., GALEX, HST) visually resemble the double Möbius (M²) structure predicted by TIMDR.
+The central field point, quadrant-like regions, and stable relational nodes suggest a similar layout to the twist–relation interactions encoded in the model — this is an informal visual observation, not a verified or quantified analysis of the underlying data.
 
 ---
 TIMDR GLOSSARY
