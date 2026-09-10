@@ -1,3 +1,5 @@
+> **Attribution:** The core GIA / TIMDR idea and framework were originated by **Jacek Kielich** ([jbackk-lang](https://github.com/jbackk-lang)). This repository is a contribution/exploration building on that original work, not a claim of original authorship.
+
 # GIA
 is a topological information framework describing Λ–τ–ρ dynamics and J‑points in complex systems.
 
