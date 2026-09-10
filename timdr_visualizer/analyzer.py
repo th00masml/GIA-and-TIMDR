@@ -11,13 +11,25 @@ class SentenceAnalysis:
 def split_sentences(text):
     return re.split(r'(?<=[.!?]) +', text)
 
+_POLISH_DIACRITICS = str.maketrans({
+    'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n',
+    'ó': 'o', 'ś': 's', 'ź': 'z', 'ż': 'z',
+})
+
+def _normalize_polish(text):
+    """Lowercase and strip Polish diacritics so matching works regardless
+    of whether the input text uses accented characters."""
+    return text.lower().translate(_POLISH_DIACRITICS)
+
 def lambda_score(sentence):
-    logic_words = ["jeśli", "bo", "ponieważ", "dlatego", "gdy", "kiedy", "ale", "jednak"]
-    return sum(sentence.lower().count(w) for w in logic_words)
+    logic_words = ["jesli", "bo", "poniewaz", "dlatego", "gdy", "kiedy", "ale", "jednak"]
+    text = _normalize_polish(sentence)
+    return sum(text.count(w) for w in logic_words)
 
 def tau_score(sentence):
-    time_words = ["potem", "następnie", "wcześniej", "później", "gdy", "kiedy"]
-    return sum(sentence.lower().count(w) for w in time_words)
+    time_words = ["potem", "nastepnie", "wczesniej", "pozniej", "gdy", "kiedy"]
+    text = _normalize_polish(sentence)
+    return sum(text.count(w) for w in time_words)
 
 def rho_score(sentence):
     return len([w for w in sentence.split() if len(w) > 7])
