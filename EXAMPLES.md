@@ -1,3 +1,4 @@
+
 # TIMDR — Examples of Application
 ## Przykłady zastosowań modelu topologiczno‑informacyjnego
 
