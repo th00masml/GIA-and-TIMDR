@@ -14,15 +14,15 @@ It is built on a **six‑layer pipeline** and a **double‑Möbius stability rul
 ---
 ## Work priorities (addendum)
 
-# TIMDR — What This Actually Is
+### TIMDR — What This Actually Is
 
-# This isn't a math paper. The equations, categories, and operators in the rest of this repo are tools, not the point.
+This isn't a math paper. The equations, categories, and operators in the rest of this repo are tools, not the point.
 
-# What I'm actually studying is a structural pattern: information collapses under pressure, but it never collapses all the way to zero. Something stable always remains. I'm using topology, resonance, and modal interference as a formal language to describe that pattern precisely, mostly because informal language gets vague fast when you try to talk about stability, transition, and what's left over after a system breaks down.
+What I'm actually studying is a structural pattern: information collapses under pressure, but it never collapses all the way to zero. Something stable always remains. I'm using topology, resonance, and modal interference as a formal language to describe that pattern precisely, mostly because informal language gets vague fast when you try to talk about stability, transition, and what's left over after a system breaks down.
 
-# The real subject is what that pattern implies once you take it outside mathematics: how people interpret collapse, why a stable remainder gets read as permanence, and where that reading leads (narratives about foundations, order, source). The math is scaffolding for that. If the equations disappeared tomorrow, the question underneath them would still stand.
+The real subject is what that pattern implies once you take it outside mathematics: how people interpret collapse, why a stable remainder gets read as permanence, and where that reading leads (narratives about foundations, order, source). The math is scaffolding for that. If the equations disappeared tomorrow, the question underneath them would still stand.
 
-# So treat the formal sections (Operators N, Category Q, the diagrams) as instrumentation, not as the thesis. The thesis is in the TIE and application sections.
+So treat the formal sections (Operators N, Category Q, the diagrams) as instrumentation, not as the thesis. The thesis is in the TIE and application sections.
 
 Order worth developing this in:
 
