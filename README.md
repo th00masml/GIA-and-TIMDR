@@ -9,6 +9,38 @@ is a topological information framework describing Λ–τ–ρ dynamics and J‑
 TIMDR is a topological model describing **how information moves, transforms, stabilizes and generates emergent structure**.  
 It is built on a **six‑layer pipeline** and a **double‑Möbius stability rule (M²)**.  
 
+---
+## Work priorities (addendum)
+
+# TIMDR — What This Actually Is
+
+# This isn't a math paper. The equations, categories, and operators in the rest of this repo are tools, not the point.
+
+# What I'm actually studying is a structural pattern: information collapses under pressure, but it never collapses all the way to zero. Something stable always remains. I'm using topology, resonance, and modal interference as a formal language to describe that pattern precisely, mostly because informal language gets vague fast when you try to talk about stability, transition, and what's left over after a system breaks down.
+
+# The real subject is what that pattern implies once you take it outside mathematics: how people interpret collapse, why a stable remainder gets read as permanence, and where that reading leads (narratives about foundations, order, source). The math is scaffolding for that. If the equations disappeared tomorrow, the question underneath them would still stand.
+
+# So treat the formal sections (Operators N, Category Q, the diagrams) as instrumentation, not as the thesis. The thesis is in the TIE and application sections.
+
+Order worth developing this in:
+
+1. **I(t) — interference over time**
+   First you need to be able to show how the signal changes before it stabilizes. Without this, E is just an endpoint with no history behind it.
+
+2. **R — resonance as the transition condition**
+   Check when interference actually satisfies |fi − fj| < εf. This is the gate between I(t) and E, not a separate stage you can skip.
+
+3. **E — emergence**
+   Only here does the real question come up: what exactly forms, and can it be observed in a real system, not just computed.
+
+4. **The remainder**
+   Check whether what's left after the full T → E cycle in a given application matches the same mechanism as the remainder in the TIE layer (collapse → stable remainder). If it does, that's evidence the model isn't just a mathematical toy.
+
+5. **Real applications**
+   Last, and only if 1–4 hold together: where this actually works outside of a piece of paper. Networks, biological rhythms, power systems: pick one, not six at once.
+
+The categorical layer (Category Q) stays as a formal skeleton in the background, but it isn't what pulls the work forward.
+
 
 ---
 Main Figure (Topological Information Modal Dynamic Resonance)
@@ -261,63 +293,88 @@ Narzędzie pokazujące strukturę informacji w trzech warstwach TIMDR:
 
 Dodatkowo wykrywa punkty skrętu (J), czyli miejsca gwałtownej zmiany struktury.
 
-## Uruchomienie
+
+
+# TIMDR Visualizer
+
+A tool that shows the structure of information across the three TIMDR layers:
+- Λ — logical layer
+- τ — sequential layer
+- ρ — information density
+
+It also detects twist points (J): places where the structure changes abruptly.
+
+Note: the scores are heuristic (keyword counts and word length), not a
+computation of the TIMDR formalism itself — it's a lightweight companion
+demo, not an implementation of the topology/Möbius/resonance model.
+
+## Setup
+
+cd timdr_visualizer
+python -m venv .venv
+.venv\Scripts\activate  (Windows)  /  source .venv/bin/activate  (macOS/Linux)
+pip install -r requirements-dev.txt
+
+## Running it
 
 python run_example.py
 
+Output: a plot of Λ, τ, ρ with the J points marked.
 
-Wynik: wykres Λ, τ, ρ + zaznaczone punkty J.
+## Tests
+
+pytest test_analyzer.py
 
 
 ---
-dopisek
+addendum
 ---
-Najważniejsze pojęcia (inżyniersko)
+Key concepts (in engineering terms)
 Orientation
-Kierunek interpretacji sygnału.
-Coś jak „polaryzacja” w elektronice albo „bit kierunku” w protokołach.
+The direction in which a signal is interpreted.
+Something like polarity in electronics, or a direction bit in a protocol.
 
 Horizon
-Granica widoczności informacji.
-Coś jak „scope” w programowaniu albo „granica pamięci podręcznej”.
+The boundary of information visibility.
+Something like scope in programming, or a cache boundary.
 
 Chain
-Łańcuch zależności.
-Jak pipeline w CI/CD albo sekwencja kroków w algorytmie.
+A chain of dependencies.
+Like a CI/CD pipeline, or a sequence of steps in an algorithm.
 
 Möbius Transition
-Odwrócenie orientacji.
-Jak negacja, ale strukturalna — zmienia sposób patrzenia na dane.
+A reversal of orientation.
+Like negation, but structural: it changes the way the data is looked at.
 
 Resonance
-Zgodność stanów w czasie.
-Jak synchronizacja zegarów, lockstep, alignment.
+Agreement between states over time.
+Like clock synchronization, lockstep, alignment.
 
 Emergence
-Powstanie stabilnego obiektu informacyjnego.
-Jak „commit”, który jest już nieodwracalny.
+The formation of a stable information object.
+Like a commit, one that can no longer be undone.
 
 T → I → M → I(t) → R → E
 T — Topology
-Ustalamy, gdzie w strukturze umieścić sygnał.
+We decide where in the structure to place the signal.
 
 I — Information
-Wyciągamy surową treść.
+We extract the raw content.
 
 M — Modality
-Rozpoznajemy, jakiego typu jest sygnał.
+We identify what type of signal it is.
 
 I(t) — Temporal Information
-Rozciągamy to w czasie — patrzymy na zmiany, fazy, rytmy.
+We stretch it out in time: we look at changes, phases, rhythms.
 
 R — Resonance
-Sprawdzamy, czy stany pasują do siebie.
+We check whether the states fit together.
 
 E — Emergence
-Jeśli tak → powstaje stabilny obiekt.
+If they do → a stable object forms.
 
 ---
-TIMDR w wersji mechanicznej https://www.youtube.com/shorts/kKzygIB0k38
+TIMDR in mechanical form https://www.youtube.com/shorts/kKzygIB0k38
 
 ---
 
