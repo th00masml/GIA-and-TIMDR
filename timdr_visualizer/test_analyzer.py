@@ -20,6 +20,16 @@ def test_split_single_sentence():
     assert split_sentences("Only one.") == ["Only one."]
 
 
+def test_split_sentences_newline_separated():
+    text = "First one.\nSecond one!\nThird?"
+    assert split_sentences(text) == ["First one.", "Second one!", "Third?"]
+
+
+def test_split_sentences_strips_surrounding_whitespace():
+    text = "\n  First sentence.  \n  Second sentence.  \n"
+    assert split_sentences(text) == ["First sentence.", "Second sentence."]
+
+
 def test_lambda_score_with_logic_words():
     assert lambda_score("bo dlatego jednak") == 3
 

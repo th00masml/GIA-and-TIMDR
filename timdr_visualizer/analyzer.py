@@ -9,7 +9,8 @@ class SentenceAnalysis:
         self.rho = rho
 
 def split_sentences(text):
-    return re.split(r'(?<=[.!?]) +', text)
+    sentences = re.split(r'(?<=[.!?])\s+', text.strip())
+    return [s.strip() for s in sentences if s.strip()]
 
 _POLISH_DIACRITICS = str.maketrans({
     'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n',
